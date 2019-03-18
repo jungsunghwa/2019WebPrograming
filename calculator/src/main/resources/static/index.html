@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input id="num1" placeholder="첫번쨰 숫자">
+    <select id="operator">
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="div">*</option>
+        <option value="mul">/</option>
+    </select>
+    <input id="num2" placeholder="두번쨰 숫자">
+    <button onclick="send()">확인</button>
+    <div id="result"></div>
+<script>
+    async function send() {
+        let num1 = $('#num1').val().trim();
+        let num2 = $('#num2').val().trim();
+        let operator = $('#operator').val();
+
+        if ((!num1 || num1 === '') && (!num2 || num2 === '')){
+            $('#result').html('입력부터 하시오.');
+            return;
+        }
+
+        await $.get(`/calculating/${num1}/${operator}/${num2}`)
+            .done(
+                response =>
+                    $('#result').html(JSON.stringify(response))
+            )
+            .fail(
+                err =>
+                    $('#result').html(JSON.stringify(err))
+            )
+            .always(
+                () =>
+                    $('#result').html(
+                        $('#result').html() + '<br> 항상실행')
+            )
+    }
+</script>
+</body>
+</html>

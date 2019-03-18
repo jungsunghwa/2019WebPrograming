@@ -11,7 +11,71 @@
 <h1>Call AJAX</h1>
 <div>
     <input id="name" placeholder="이름입력">
-    <button>전송</button>
+    <button onclick="send2()">전송</button>
+    <div id="display-response"></div>
 </div>
+<script>
+    async function send2() {
+        let name = $('#name').val().trim();
+        if (!name || name === '') {
+            $('#display-response').html('입력부터 하시오.');
+            return;
+        }
+
+        try {
+            let response = await $.get('/greeting/' + name);
+            $('#display-response').html(JSON.stringify(response));
+        } catch (err) {
+            $('#display-response').html(JSON.stringify(err));
+        } finally {
+            $('#display-response').html(
+                $('#display-response').html() + '<br> 항상실행'
+            );
+        }
+
+
+    }
+
+    function send1() {
+        let name = $('#name').val().trim();
+        if (!name || name === '') {
+            $('#display-response').html('입력부터 하시오.');
+            return;
+        }
+        $.get('/greeting/' + name)
+            .done(
+                response =>
+                    $('#display-response').html(JSON.stringify(response))
+            )
+            .fail(
+                err =>
+                    $('#display-response').html(JSON.stringify(err))
+            )
+            .always(
+                () =>
+                    $('#display-response').html(
+                        $('#display-response').html() + '<br> 항상실행')
+            )
+    }
+
+    function send() {
+        let name = $('#name').val().trim();
+        if (!name || name === '') return;
+        //XMLHttpRequest
+        $.ajax({
+            url: '/greeting/' + name,
+            type: 'GET',
+            async: true,
+            success: function (response) {
+                $('#display-response').html(
+                    JSON.stringify(response));
+            },
+            error: function (err) {
+                $('#display-response').html(
+                    JSON.stringify(response));
+            }
+        });
+    }
+</script>
 </body>
 </html>

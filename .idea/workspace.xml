@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c845c3da-50c8-468e-bc0d-01333cd8a858" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_01_318/src/main/resources/static/index.html" afterDir="false" />
+    <list default="true" id="c845c3da-50c8-468e-bc0d-01333cd8a858" name="Default Changelist" comment="add readme">
+      <change beforePath="$PROJECT_DIR$/calc1" beforeDir="false" afterPath="$PROJECT_DIR$/calc1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calc1/src/main/java/kr/hs/dgsw/calc1/Abcd.java" beforeDir="false" afterPath="$PROJECT_DIR$/calc1/src/main/java/kr/hs/dgsw/calc1/Abcd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calc1/src/main/java/kr/hs/dgsw/calc1/Calc1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/calc1/src/main/java/kr/hs/dgsw/calc1/Calc1Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_01_318/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web_01_318/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +66,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552871607552" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552871612671" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -97,12 +93,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552871352775</updated>
-      <workItem from="1552871354692" duration="219000" />
+      <workItem from="1552871354692" duration="275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219000" />
+    <option name="totallyTimeSpent" value="275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -113,8 +109,9 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -140,6 +137,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.MD">
